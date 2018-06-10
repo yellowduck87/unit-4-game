@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Lobster|Montserrat+Alternates|Pacifico|Titan+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron" id="header">
+        <h1>Quack Collector</h1>
+        <h2>Click the quackers (ducks) provided, and try to get to the target number without going over!</h2>
+    </div>
+    <div class="container" id="data">
+        <div class="row">
+            <div class="container" id="instructions">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>Each quacker has a different numerical value. It will remain the same for the duration of one game</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Discover the value by clicking the quaker then watch your Current Quacks increase.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Figure which and how many times each quacker must be clicked to win the game! Any and all combinations are
+                            allowed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="target">
+                <h3 id="target-value">Target Number: 0</h3>
+            </div>
+            <div class="col-sm-4" id="count">
+                <h3 id="current-value">Current Quacks: 0</h3>
+            </div>
+            <div class="col-sm-4" id="scoreboard">
+                <h3 id="wins">Wins: 0</h3>
+                <h3 id="losses">Losses: 0</h3>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="assets/images/quack1.jpg" alt="quack1" class="quacks" id="quack1">
+            </div>
+            <div class="col-sm-3" class="quacks">
+                <img src="assets/images/quack5.jpg" alt="quack5" class="quacks" id="quack2">
+            </div>
+            <div class="col-sm-3" class="quacks">
+                <img src="assets/images/quack3.jpg" alt="quack3" class="quacks" id="quack3">
+            </div>
+            <div class="col-sm-3" class="quacks">
+                <img src="assets/images/quack4.jpg" alt="quack4" class="quacks" id="quack4">
+            </div>
+        </div>
+
+        <!-- <div cass="row">
+            <div class="col-sm-6" id="count">
+                <h3 id="current-value">Current Quacks: 0</h3>
+            </div>
+        </div> -->
+    </div>
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monserrat Alternates', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Bangers', cursive; */
+}
+
+.jumbotron {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #FFDFAF;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    font-weight: 400;
+    color: #FF9534;
+}
+
+h2
+
+h2, h3, h4 {
+    font-family: 'Titan One', cursive;
+}
+
+img {
+    max-width: 200px;
+    border: solid 5px #FFB234;
+    margin: 10px auto 10px auto;
+    float: left;
+}
+
+img:hover {
+    border: dashed 5px #E86324;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+;
+#target,
+#scoreboard,
+#count {
+    text-align: center;
+    justify-content: center
+}
+
+#count ,
+#target
+{
+    margin-top: 20px;
+}
