@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     var randomTarget = 0;
     var counter = 0;
@@ -8,14 +7,20 @@ $(document).ready(function () {
     var sound;
 
     loadNewGame = function () {
-        randomTarget = Math.floor((Math.random() * 120) + 19);
+        randomTarget = Math.floor((Math.random() * 101) + 19);
         console.log(randomTarget);
+        var tempArr = [];
 
         $("#target-value").text("Target Number: " + randomTarget);
 
         var quacks = ["#quack1", "#quack2", "#quack3", "#quack4"];
         for (var q = 0; q < quacks.length; q++) {
-            randomQuacks = Math.floor((Math.random() * 12) + 1);
+            do {
+                randomQuacks = Math.floor((Math.random() * 12) + 1);
+            }
+            while (tempArr.includes(randomQuacks)) 
+            
+            tempArr.push(randomQuacks);
             $(quacks[q]).attr("data-quack-value", randomQuacks);
             console.log(randomQuacks);
         }
@@ -32,7 +37,7 @@ $(document).ready(function () {
         $("#current-value").text("Current Quacks: " + counter);
 
         sound = document.createElement("audio");
-        sound.src ="assets/sounds/QuackSound.mp3";
+        sound.src = "assets/sounds/QuackSound.mp3";
         sound.play();
 
 
@@ -40,7 +45,7 @@ $(document).ready(function () {
             alert("You win!");
             wins++;
             $("#wins").text("Wins: " + wins);
-           loadNewGame();
+            loadNewGame();
 
         } else if (counter >= randomTarget) {
             alert("You lose!");
@@ -52,11 +57,3 @@ $(document).ready(function () {
 
 
 })
-
-
-
-
-
-
-
-
